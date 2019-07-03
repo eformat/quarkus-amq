@@ -15,7 +15,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @ApplicationScoped
-public class Consumer {
+public class Coffees {
 
     private Jsonb jsonb = JsonbBuilder.create();
 
