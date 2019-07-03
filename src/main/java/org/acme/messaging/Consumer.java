@@ -14,7 +14,6 @@ import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-@RegisterForReflection(methods = true, fields = true)
 @ApplicationScoped
 public class Consumer {
 

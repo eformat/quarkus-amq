@@ -21,6 +21,7 @@ mvn package -Pnative -Dnative-image.docker-build=true
 Source to image application build
 
 ```
-oc new-build --name=quarkus-amq quay.io/eformat/quarkus-native-s2i:graalvm-19.0.2~https://github.com/eformat/quarkus-amq
+#oc new-build --name=quarkus-amq quay.io/eformat/quarkus-native-s2i:graalvm-19.0.2~https://github.com/eformat/quarkus-amq
+oc new-build --name=quarkus-amq quay.io/eformat/quarkus-native-s2i:graalvm-1.0.0-rc16~https://github.com/eformat/quarkus-amq
 oc new-app quarkus-amq
 ```
