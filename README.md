@@ -14,6 +14,8 @@ Run application locally
 ```
 oc port-forward $(oc get pods -lapplication=broker -o name) 5672
 mvn compile quarkus:dev
+--
+mvn package -Pnative -Dnative-image.docker-build=true
 ```
 
 Source to image application build

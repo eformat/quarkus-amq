@@ -1,5 +1,6 @@
 package org.acme.messaging;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
 import io.reactivex.Flowable;
 import io.smallrye.reactive.messaging.annotations.Merge;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
@@ -13,6 +14,7 @@ import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+@RegisterForReflection(methods = true, fields = true)
 @ApplicationScoped
 public class Consumer {
 
