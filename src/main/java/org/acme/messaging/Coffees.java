@@ -1,6 +1,5 @@
 package org.acme.messaging;
 
-import io.quarkus.runtime.annotations.RegisterForReflection;
 import io.reactivex.Flowable;
 import io.smallrye.reactive.messaging.annotations.Merge;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
