@@ -35,6 +35,6 @@ oc port-forward $(oc get pods -lapplication=broker -o name) 5672
 Source to image application build on openshift
 
 ```
-oc new-build --name=quarkus-amq quay.io/eformat/quarkus-native-s2i:graalvm-19.0.2~https://github.com/eformat/quarkus-amq
+oc new-build --name=quarkus-amq quay.io/eformat/quarkus-native-s2i-ubi:latest~https://github.com/eformat/quarkus-amq
 oc new-app quarkus-amq
 ```
