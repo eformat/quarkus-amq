@@ -1,2 +1,3 @@
 MAVEN_ARGS=-s configuration/settings.xml
 ARTIFACT_COPY_ARGS=-p -r lib/ *-runner.jar
+QUARKUS_ARGS=-Xmx10m -Xms10m -Xmn10m -XX:+PrintGC -XX:+VerboseGC -XX:+PrintGCTimeStamps +XX:+PrintHeapShape
